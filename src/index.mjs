@@ -1,6 +1,4 @@
-'use strict';
-
-const { probit } = require('simple-statistics')
+import { probit } from 'simple-statistics'
 
 const curry = (fn) => {
 
@@ -46,18 +44,12 @@ const fromAverage = (zScore, averageRating, maxRating, totalRatings) =>
 
 const fromStars = (zScore, starsList) => {
 
-    const positiveRatings = starsList.reduce(weightStars, 0)    
+    const positiveRatings = starsList.reduce(weightStars, 0)
     const totalRatings = starsList.reduce((a, b) => a + b, 0)
 
     return getLowerBound(zScore, positiveRatings, totalRatings)
 }
 
-const averageToScore = createScoreFunction(fromAverage)
-const starsToScore = createScoreFunction(fromStars)
-const upvotesToScore = createScoreFunction(fromUpvotes)
-
-module.exports = {
-    averageToScore,
-    starsToScore,
-    upvotesToScore
-}
+export const averageToScore = createScoreFunction(fromAverage)
+export const starsToScore = createScoreFunction(fromStars)
+export const upvotesToScore = createScoreFunction(fromUpvotes)

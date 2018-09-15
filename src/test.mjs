@@ -1,4 +1,4 @@
-const { averageToScore, starsToScore, upvotesToScore } = require('./index.js')
+import { averageToScore, starsToScore, upvotesToScore } from './index'
 
 console.log(averageToScore(0.95)(4.5, 5, 100))
 console.log(starsToScore(0.95)([10, 0, 0, 0, 90]))
