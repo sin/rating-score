@@ -1,0 +1,12 @@
+{
+  "name": "rating-score",
+  "version": "1.0.0",
+  "description": "A better way to calculate ranking score to sort things on the web based on user upvotes or “stars”, using lower bound of Wilson score confidence interval for a Bernoulli parameter.",
+  "main": "src/index.js",
+  "repository": "https://github.com/sin/rating-score.git",
+  "author": "Mateusz Sienkan <sin.mateusz@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "simple-statistics": "^6.1.0"
+  }
+}
