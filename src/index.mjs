@@ -39,6 +39,6 @@ export const starsToScore = createScoreFunction(fromStars)
  * @param {Number} confidence
  * @param {Number} upvotes - Number of positive reviews.
  * @param {Number} downvotes - Number of negative reviews.
- * @returns {Number} Calculated score (lower bound).
+ * @returns {Number} Calculated score.
  */
 export const upvotesToScore = createScoreFunction(fromUpvotes)

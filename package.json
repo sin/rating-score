@@ -17,11 +17,13 @@
   },
   "scripts": {
     "build": "rollup -c",
-    "dev": "rollup -c -w"
+    "dev": "rollup -c -w",
+    "docs:build": "documentation readme src/ --section=API"
   },
   "devDependencies": {
     "@babel/core": "7",
     "@babel/preset-env": "^7.0.0",
+    "documentation": "^8.1.2",
     "rollup": "^0.65.2",
     "rollup-plugin-babel": "^4.0.3",
     "rollup-plugin-node-resolve": "^3.4.0"
